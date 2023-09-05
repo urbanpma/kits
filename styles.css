@@ -1,0 +1,94 @@
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.imagen.jpg {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.derechos {
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+    margin: 0;
+}
+
+#portada {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca la imagen en el fondo */
+    background-image: url('portada.jpg'); /* Ruta a tu imagen de portada */
+    background-size: cover; /* La imagen se ajusta al tamaño de la ventana del navegador */
+    background-position: center; /* La imagen se centra dentro de la ventana del navegador */
+}
+
+/* Ajusta el estilo del contenido sobre la portada */
+#contenido {
+    /* Añade estilos como márgenes, espaciado y color de texto aquí */
+    padding: 20px;
+    color: white; /* Ejemplo de texto en color blanco sobre la imagen */
+}
+
+/* Estilo para todos los textos */
+body, p, h1, h2, h3, h4, h5, h6 {
+    color: white; /* Texto blanco */
+}
+
+/* Estilo para los encabezados */
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+}
+
+/* Agrega un fondo gris detrás de las letras de los encabezados */
+h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+    content: "";
+    position
+}
+/* Cambia el color de los enlaces de navegación a rojo cuando se pasa el cursor */
+nav ul li a:hover {
+    color: red;
+}
+

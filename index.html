@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panama kits</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagen.jpg" alt="Panama Kits">
+        </div>
+        <p id="fecha" class="fecha-encabezado"></p> <!-- Mueve el elemento aquí -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contactenos">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+  <section id="portada"></section>
+  
+  <section id="contenido">
+    <!-- Contenido de tu página aquí -->
+  </section>
+</body>
+
+   <section id="inicio">
+        <h2>Bienvenidos a Nuestro Sitio Web</h2>
+        <p>Aqui encontraras las camisetas de tus equipos favoritos a los mejores precios del mercado<p>
+    </section>
+
+    <section id="quienes-somos">
+    <h2>Quiénes Somos</h2>
+    <p>Panama Kits: Más que una Marca, una Pasión</p>
+    <p>En Panama Kits, no somos solo una marca; somos un equipo de apasionados por la aventura y la exploración. Nuestra historia comienza con el amor por la naturaleza y el deseo de compartir experiencias únicas con el mundo.</p>
+
+    <h3>Nuestra Misión</h3>
+    <p>Nuestra misión es simple pero poderosa: fomentar la conexión con la naturaleza y la cultura a través de productos de alta calidad que faciliten la exploración y el descubrimiento. Creemos que cada viaje es una oportunidad para enriquecer nuestras vidas y las vidas de quienes nos rodean.</p>
+
+    <h3>Compromiso con la Sostenibilidad</h3>
+    <p>En Panama Kits, nos preocupamos profundamente por el medio ambiente. Estamos comprometidos con prácticas sostenibles en cada aspecto de nuestro negocio, desde la elección de materiales respetuosos con el entorno hasta la reducción de residuos y la promoción del ecoturismo.</p>
+
+    <h3>Nuestros Productos</h3>
+    <p>Ofrecemos una amplia gama de productos diseñados para mejorar tus aventuras al aire libre. Desde mochilas de senderismo y tiendas de campaña resistentes hasta equipos de supervivencia y ropa de expedición, nuestros productos están diseñados pensando en la durabilidad y la comodidad.</p>
+
+    <h3>Nuestro Equipo</h3>
+    <p>Detrás de Panama Kits, hay un equipo de entusiastas de la naturaleza, viajeros apasionados y expertos en la industria que trabajan incansablemente para brindarte las mejores soluciones para tus aventuras. Nos enorgullece contar con un equipo diverso y multicultural que comparte una visión común: explorar el mundo y protegerlo.</p>
+
+    <h3>Únete a Nuestra Comunidad</h3>
+    <p>Más que vender productos, construimos una comunidad de amantes de la aventura. Únete a nosotros en nuestras redes sociales y comparte tus historias de viaje, consejos y fotos con la comunidad Panama Kits. Juntos, podemos inspirar a más personas a abrazar la belleza de nuestro planeta.</p>
+
+    <p>En Panama Kits, somos una familia unida por una pasión compartida: la exploración del mundo natural y cultural que nos rodea. Esperamos que te unas a nosotros en esta emocionante aventura.</p>
+
+    </section>
+
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <p>Equipaciones actuales, retro, segundas equipaciones y camisetas personalizadas.</p>
+    </section>
+
+    <section id="contactenos">
+    <h2>Contacto</h2>
+    <p>Estamos ubicados en Panama Oeste, Corregimiento de Arraijan.</p>
+    <p>Correo Electrónico: <a href="mailto:pkits@gmail.com">pkits@gmail.com</a></p>
+    <p>Teléfono: +507 66543412</p>
+</section>
+<section id="contactenos">
+    <h2>Contáctenos</h2>
+    <form id="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+<script>
+    document.getElementById("formulario-contacto").addEventListener("submit", function (event) {
+        event.preventDefault();
+        const nombre = document.getElementById("nombre").value;
+        const apellido = document.getElementById("apellido").value;
+        const telefono = document.getElementById("telefono").value;
+        const email = document.getElementById("email").value;
+        const mensaje = document.getElementById("mensaje").value;
+
+        const mensajeAlert = `
+        Nombre: ${nombre}
+        Apellido: ${apellido}
+        Teléfono: ${telefono}
+        Email: ${email}
+        Mensaje: ${mensaje}
+        `;
+
+        alert("Datos del formulario:\n\n" + mensajeAlert);
+    });
+</script>
+
+
+
+    <footer>
+        <p class="derechos">Luis Bermudez &copy; 2016. Sitio Web con los derechos reservados</p>
+    </footer>
+
+    <script>
+        // Obtenemos la fecha actual
+        const fechaActual = new Date();
+
+        // Creamos un array con los nombres de los días de la semana en español
+        const diasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+
+        // Obtenemos el día de la semana y la fecha
+        const diaSemana = diasSemana[fechaActual.getDay()];
+        const fecha = fechaActual.toLocaleDateString();
+
+        // Mostramos la información en el elemento HTML dentro del encabezado
+        document.getElementById("fecha").textContent = `Hoy es ${diaSemana}, ${fecha}`;
+    </script>
+</body>
+</html>
+

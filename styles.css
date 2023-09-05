@@ -60,7 +60,7 @@ footer {
     width: 100%;
     height: 100%;
     z-index: -1; /* Coloca la imagen en el fondo */
-    background-image: url('../portada.jpg'); /* Ruta a tu imagen de portada */
+    background-image: url('https://cdn.discordapp.com/attachments/530209053830283305/1148709865133445271/portada.jpg'); /* Ruta a tu imagen de portada */
     background-size: cover; /* La imagen se ajusta al tamaño de la ventana del navegador */
     background-position: center; /* La imagen se centra dentro de la ventana del navegador */
 }
